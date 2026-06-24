@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="profileName">Welcome to My Portfolio</h1>
+                <p id="profileBio">Full-Stack Developer | Creative Problem Solver</p>
+                <p id="profileLocation"></p>
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div id="projectsContainer" class="projects-grid">
+                <!-- Projects will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills & Expertise</h2>
+            <div id="skillsContainer" class="skills-grid">
+                <!-- Skills will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 id="contactEmail">Email</h3>
+                    <p id="contactEmailValue"></p>
+                    <h3>Phone</h3>
+                    <p id="contactPhoneValue"></p>
+                    <h3>Location</h3>
+                    <p id="contactLocationValue"></p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a id="githubLink" href="#" target="_blank">GitHub</a>
+                <a id="linkedinLink" href="#" target="_blank">LinkedIn</a>
+                <a id="twitterLink" href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
